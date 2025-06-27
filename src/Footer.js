@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 
-function Footer(){
-    var namaMhs = 'Hikmal Akbar';
+const Footer = function(props){
     return(
         <div>
             <h3>Halaman Footer</h3>
-            <h3>Component ini dibuat menggubakan function bukan Class</h3>
-            <p>Nama Saya : {namaMhs} </p>
+            <h3>Component ini dibuat menggunakan Function bukan Class</h3>
+            <p> {props.judul} </p>
+            <p>Design By @{props.namaMhs} </p>
         </div>
     );
 }
