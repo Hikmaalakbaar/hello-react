@@ -1,14 +1,7 @@
 import { Component } from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
-const Footer = function(){
-  return(
-    <div>
-      <h3>Halaman Footer</h3>
-      <h3>Component ini dibuat menggunakan function bukan class</h3>
-    </div>
-  );
-}
 
 class App extends Component{
   render(){
