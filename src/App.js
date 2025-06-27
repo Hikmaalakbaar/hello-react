@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import List from './List';
 
 
 class App extends Component{
@@ -9,6 +10,7 @@ class App extends Component{
       <div>
         <Header/>
         <h1>Component dari Class App</h1>
+        <List/>
         <Footer/>
       </div>
     );
