@@ -1,21 +1,12 @@
 import { Component } from 'react';
-import logo from './logo.svg';
+import Header from './Header';
 
-class Header extends Component{
-  render(){
-    return(
-      <div>
-        <h2>Makanan Khas Indonesia</h2>
-      </div>
-    );
-  }
-}
 
 class App extends Component{
   render(){
     return(
       <div>
-        <header/>
+        <Header/>
         <h1>Hello World</h1>
       </div>
     );
