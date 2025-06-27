@@ -1,12 +1,14 @@
 import React, {Component} from "react";
 
-const Footer = function(){
-  return(
-    <div>
-      <h3>Halaman Footer</h3>
-      <h3>Component ini dibuat menggunakan function bukan class</h3>
-    </div>
-  );
+function Footer(){
+    var namaMhs = 'Hikmal Akbar';
+    return(
+        <div>
+            <h3>Halaman Footer</h3>
+            <h3>Component ini dibuat menggubakan function bukan Class</h3>
+            <p>Nama Saya : {namaMhs} </p>
+        </div>
+    );
 }
 
 export default Footer;
