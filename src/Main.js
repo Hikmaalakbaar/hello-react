@@ -10,6 +10,7 @@ class Main extends Component{
         this.rubahData = this.rubahData.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
+
     rubahData(){
         this.setState((state, props) => {
             return{
@@ -18,9 +19,12 @@ class Main extends Component{
             };
         });
     }
-    handleChange(){
-        console.log('Data diubah');
+
+    handleChange(e){
+        //console.log('Data diubah');
+        console.log(e.target.value);
     }
+
     render(){
         return(
             <div>
