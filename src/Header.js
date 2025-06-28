@@ -11,8 +11,10 @@ class Header extends Component{
   this.handlePesan = this.handlePesan.bind(this);
 }
 //function
-  handlePesan(pesan) {
+  handlePesan(pesan, e) {
+    e.preventDefault();
     alert(pesan);
+    alert('Hai');
   };
 render(){
   return(
@@ -21,7 +23,7 @@ render(){
       <h3>{this.state.judul}</h3>
       <p>Mengakses props dari App secara langsung: {this.props.list} </p>
       <p>Mangakses props dari State: {this.state.dataMakanan} </p>
-      <a href="/" onClick={()=>this.handlePesan('Pesan dari Parameter')}>Halaman Header</a>
+      <a href="/" onClick={(e)=>this.handlePesan('Pesan dari Parameter', e)}>Halaman Header</a>
     </div>
   );
 }
