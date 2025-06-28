@@ -6,6 +6,7 @@ class Main extends Component{
         this.state = {
             title: 'Menu Makanan',
             title2: 'Menu Minuman',
+            inputValue: 'Hikmal Akbar',
         }
         this.rubahData = this.rubahData.bind(this);
         this.handleChange = this.handleChange.bind(this);
