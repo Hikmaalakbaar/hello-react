@@ -9,7 +9,9 @@ class Main extends Component{
         this.rubahData = this.rubahData.bind(this);
     }
     rubahData(){
-        this.setState({title: 'Pilih Makanan'});
+        this.setState((state, props) => {
+            return{title: 'Pilih Makanan'};
+        });
     }
     render(){
         return(
