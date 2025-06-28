@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import List from './List';
 import Top from './Top';
+import Main from './Main';
 
 
 class App extends Component{
@@ -10,6 +11,7 @@ class App extends Component{
     return(
       <div>
         <Header list='10 Daftar Makanan'/>
+        <Main/>
         <Top/>
         <h1>Component dari Class App</h1>
         <List/>
