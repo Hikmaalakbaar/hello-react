@@ -20,6 +20,7 @@ class Header extends Component{
 render(){
   return(
     <div>
+      {this.state.statusRendering === true ? (<h1>Selamat Datang</h1>) : (<h1>Selamat Tinggal</h1>)}
       <h2>Component dari Class Header</h2>
       <h3>{this.state.judul}</h3>
       <p>Mengakses props dari App secara langsung: {this.props.list} </p>
