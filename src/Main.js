@@ -22,8 +22,9 @@ class Main extends Component{
     }
 
     handleChange(e){
-        //console.log('Data diubah');
-        console.log(e.target.value);
+        this.setState({
+            inputValue: e.target.value,
+        });
     }
 
     render(){
