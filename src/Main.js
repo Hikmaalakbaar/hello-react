@@ -27,6 +27,10 @@ class Main extends Component{
         });
     }
 
+    componentDodMount(){
+        console.log('Jalan: componentDidMount');
+    }
+
     render(){
         return(
             <div>

@@ -7,6 +7,7 @@ class Header extends Component{
     this.state ={
     judul : 'Ini judul dari state',
     dataMakanan: this.props.list,
+    statusRendering: true
   };
   this.handlePesan = this.handlePesan.bind(this);
 }
