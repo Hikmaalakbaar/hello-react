@@ -21,9 +21,9 @@ class Main extends Component{
         });
     }
 
-    handleChange(e){
+    handleChange(value, e){
         this.setState({
-            inputValue: e.target.value,
+            [value] : e.target.value,
         });
     }
 
@@ -33,6 +33,7 @@ class Main extends Component{
                 <h3>{this.state.title}</h3>
                 <button onClick={this.rubahData}>Ubah Makanan</button>
                 <input type="text" onChange={this.handleChange}/>
+                <input type="text" value={this.state.inputKota} placeholder="kota" onChange={(e) => this.handleChange('inputKota', e)}/>
             </div>
         );
     };
