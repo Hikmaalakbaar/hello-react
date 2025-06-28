@@ -8,10 +8,10 @@ class App extends Component{
   render(){
     return(
       <div>
-        <Header/>
+        <Header list='10 Daftar Makanan'/>
         <h1>Component dari Class App</h1>
         <List/>
-        <Footer judul='Halaman Footer' namaMhs='Hikmal Akbar'/>
+        <Footer judul='Halaman Footer' namaKampus='STIKOM POLTEK'/>
       </div>
     );
   }

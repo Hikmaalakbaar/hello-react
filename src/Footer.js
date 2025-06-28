@@ -6,7 +6,7 @@ const Footer = function(props){
             <h3>Halaman Footer</h3>
             <h3>Component ini dibuat menggunakan Function bukan Class</h3>
             <p> {props.judul} </p>
-            <p>Design By @{props.namaMhs} </p>
+            <p>Design By @{props.namaKampus} </p>
         </div>
     );
 }
