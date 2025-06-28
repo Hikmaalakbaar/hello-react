@@ -20,12 +20,18 @@ class Header extends Component{
 render(){
   return(
     <div>
-      {this.state.statusRendering === true ? (<h1>Selamat Datang</h1>) : (<h1>Selamat Tinggal</h1>)}
-      <h2>Component dari Class Header</h2>
-      <h3>{this.state.judul}</h3>
-      <p>Mengakses props dari App secara langsung: {this.props.list} </p>
-      <p>Mangakses props dari State: {this.state.dataMakanan} </p>
-      <a href="/" onClick={(e)=>this.handlePesan('Pesan dari Parameter', e)}>Halaman Header</a>
+      {this.state.statusRendering === true ? (
+        <div>
+          <h1>Selamat Datang</h1>
+          <h2>Hai Hikmal Akbar</h2>
+          </div>
+          ) : (
+          <div>
+            <h1>Selamat Tinggal</h1>
+            <h2>Semoga Bertemu Kembali</h2>
+            </div>
+          )
+          }
     </div>
   );
 }
