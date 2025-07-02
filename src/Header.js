@@ -10,6 +10,7 @@ class Header extends Component{
     statusRendering: true
   };
   this.handlePesan = this.handlePesan.bind(this);
+  this.handleElement = this.handleElement.bind(this);
 }
 //function
   handlePesan(pesan, e) {
@@ -17,6 +18,13 @@ class Header extends Component{
     alert(pesan);
     alert('Hai');
   };
+
+  handleElement(){
+    this.setState((state, props) => {
+      return {statusRendering: !this.state.statusRendering};
+    });
+  }
+
 render(){
   return(
     <div>
@@ -31,7 +39,8 @@ render(){
             <h2>Semoga Bertemu Kembali</h2>
             </div>
           )
-          }
+        }
+        <button onClick={this.handleElement}>Change</button>
     </div>
   );
 }
